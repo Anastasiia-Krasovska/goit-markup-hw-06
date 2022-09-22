@@ -809,7 +809,7 @@ h3 {
   visibility: hidden;
 }
 .modal {
-  position: fixed;
+  position: absolute;
   min-height: 581px;
   min-width: 528px;
   background-color: var(--hero-text-color);
@@ -845,4 +845,63 @@ h3 {
   height: 18px;
   fill: rgb(0, 0, 0);
   background-color: var(--hero-text-color);
+}
+textarea {
+  resize: none;
+}
+.personal-data {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.form-text {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+}
+.form-field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkbox {
+  flex-direction: row;
+}
+.form-field label {
+  margin-bottom: 4px;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
+}
+.form-field input {
+  width: 448px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.submit-btn {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
