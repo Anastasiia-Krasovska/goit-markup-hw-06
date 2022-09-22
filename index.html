@@ -51,6 +51,30 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form class="personal-data">
+                        <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+                        <div class="form-field"> <label class="form-label" for="name">Ім'я</label>
+                            <input class="form-input" type="text" name="name" id="name" />
+                        </div>
+                        <div class="form-field"> <label class="form-label" for="tel">Телефон</label>
+                            <input class="form-input" type="tel" name="tel" id="tel" />
+                        </div>
+                        <div class="form-field"> <label class="form-label" for="mail">Пошта</label>
+                            <input class="form-input" type="email" name="mail" id="mail" />
+                        </div>
+                        <div class="form-field"> <label class="form-label" for="comment">Коментарій</label>
+                            <textarea name="comment" id="comment" placeholder="Введіть текст" rows="8"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <div class="form-field"> <input class="form-input" type="checkbox" name="admit"
+                                    value="admit" id="admit" />
+                                <label class="form-label" for="admit">Погоджуюся з розсилкою та приймаю Умови
+                                    договору</label>
+                            </div>
+                        </div>
+                        <button class="submit-btn" type="submit">Відправити</button>
+                    </form>
+
                     <button class="close-button" data-modal-close>
                         <svg class="modal-icon">
                             <use href="./images/symbol-defs-min.svg#icon-close-black-18dp-2-1"></use>
