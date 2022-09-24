@@ -53,24 +53,34 @@
                 <div class="modal">
                     <form class="personal-data">
                         <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
-                        <div class="form-field"> <label class="form-label" for="name">Ім'я</label>
+                        <div class="form-field">
+                            <label class="form-label" for="name">Ім'я</label>
+                            <svg class="svg-form">
+                                <use href="./images/symbol-defs-min-4.svg#icon-person-black"></use>
+                            </svg>
                             <input class="form-input" type="text" name="name" id="name" />
+
                         </div>
                         <div class="form-field"> <label class="form-label" for="tel">Телефон</label>
                             <input class="form-input" type="tel" name="tel" id="tel" />
+                            <svg class="svg-form">
+                                <use href="./images/symbol-defs-min-4.svg#icon-phone-black"></use>
+                            </svg>
                         </div>
                         <div class="form-field"> <label class="form-label" for="mail">Пошта</label>
                             <input class="form-input" type="email" name="mail" id="mail" />
+                            <svg class="svg-form">
+                                <use href="./images/symbol-defs-min-4.svg#icon-email-black"></use>
+                            </svg>
                         </div>
-                        <div class="form-field"> <label class="form-label" for="comment">Коментарій</label>
-                            <textarea name="comment" id="comment" placeholder="Введіть текст" rows="8"></textarea>
+                        <div class="form-comment"> <label class="form-label" for="comment">Коментарій</label>
+                            <textarea name="comment" id="comment" placeholder="Введіть текст" rows="7"></textarea>
                         </div>
-                        <div class="checkbox">
-                            <div class="form-field"> <input class="form-input" type="checkbox" name="admit"
-                                    value="admit" id="admit" />
-                                <label class="form-label" for="admit">Погоджуюся з розсилкою та приймаю Умови
-                                    договору</label>
-                            </div>
+                        <div class="form-checkbox"><label class="form-label" for="admit"> <input class="checkbox"
+                                    type="checkbox" name="admit" value="admit" id="admit" /> <span class="icon"></span>
+                                Погоджуюся з розсилкою та приймаю <a href="/"> Умови
+                                    договору</a></label>
+
                         </div>
                         <button class="submit-btn" type="submit">Відправити</button>
                     </form>
@@ -336,6 +346,14 @@
                         </svg>
                     </li>
                 </ul>
+            </div>
+            <div class="join-email">
+                <p class="title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+                <form>
+                    <label class="form-label" for="mail"></label>
+                    <input class="form-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+                </form>
+                <div class="join-button"><button type="button">Підписатися</button></div>
             </div>
         </div>
     </footer>
