@@ -55,7 +55,7 @@
                         <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
                         <div class="form-field">
                             <label class="form-label" for="name">Ім'я</label>
-                            <svg class="svg-form">
+                            <svg class="svg-form-person">
                                 <use href="./images/symbol-defs-min-4.svg#icon-person-black"></use>
                             </svg>
                             <input class="form-input" type="text" name="name" id="name" />
@@ -63,13 +63,13 @@
                         </div>
                         <div class="form-field"> <label class="form-label" for="tel">Телефон</label>
                             <input class="form-input" type="tel" name="tel" id="tel" />
-                            <svg class="svg-form">
+                            <svg class="svg-form-phone">
                                 <use href="./images/symbol-defs-min-4.svg#icon-phone-black"></use>
                             </svg>
                         </div>
                         <div class="form-field"> <label class="form-label" for="mail">Пошта</label>
                             <input class="form-input" type="email" name="mail" id="mail" />
-                            <svg class="svg-form">
+                            <svg class="svg-form-email">
                                 <use href="./images/symbol-defs-min-4.svg#icon-email-black"></use>
                             </svg>
                         </div>
@@ -83,13 +83,14 @@
 
                         </div>
                         <button class="submit-btn" type="submit">Відправити</button>
+                        <button class="close-button" data-modal-close>
+                            <svg class="modal-icon">
+                                <use href="./images/symbol-defs-min.svg#icon-close-black-18dp-2-1"></use>
+                            </svg>
+                        </button>
                     </form>
 
-                    <button class="close-button" data-modal-close>
-                        <svg class="modal-icon">
-                            <use href="./images/symbol-defs-min.svg#icon-close-black-18dp-2-1"></use>
-                        </svg>
-                    </button>
+
                 </div>
             </div>
         </section>
@@ -129,12 +130,21 @@
                     <li class="item">
                         <img class="photo-activity" src="./images/keyboard.jpg" alt="клавіатура" width="370"
                             height="294">
+                        <div class="work-overlay">
+                            <p class="work-explanation">Десктопні додатки</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img class="photo-activity" src="./images/phone.jpg" alt="телефон" width="370" height="294">
+                        <div class="work-overlay">
+                            <p class="work-explanation">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img class="photo-activity" src="./images/tablett.jpg" alt="планшет" width="370" height="294">
+                        <div class="work-overlay">
+                            <p class="work-explanation">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -352,10 +362,9 @@
                 <form>
                     <label class="form-label" for="mail"></label>
                     <input class="form-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+                    <div class="join-button"><button type="button">Підписатися</button></div>
                 </form>
-                <div class="join-button"><button type="button">Підписатися</button></div>
             </div>
-        </div>
     </footer>
     <script src="./js/modal.js"></script>
 </body>
