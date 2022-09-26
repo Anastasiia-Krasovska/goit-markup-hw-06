@@ -906,6 +906,7 @@ textarea {
 .form-field:hover,
 .form-field:focus {
   fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 .form-checkbox {
   display: inline-flex;
@@ -938,10 +939,6 @@ textarea {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-field input:hover,
-.form-field input:focus {
-  border-color: var(--accent-text-color);
 }
 .form-field input::placeholder {
   font-family: "Roboto";
@@ -976,6 +973,7 @@ textarea {
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
+  height: 120px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1068,7 +1066,7 @@ textarea {
   color: var(--accent-text-color);
 }
 .join-email {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .join-email .title {
   font-family: "Roboto";
@@ -1089,6 +1087,7 @@ textarea {
   border-radius: 4px;
   padding-left: 0;
   padding-left: 16px;
+  color: var(--hero-text-color);
 }
 .join-email input::placeholder {
   padding-left: 0;
